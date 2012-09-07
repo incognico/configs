@@ -1,0 +1,469 @@
+#include "ui/menudef.h"
+
+//team menu
+
+//defines from ui_shared.h
+
+{
+	assetGlobalDef {
+		cursor "ui/assets/3_cursor2"		// cursor	
+		gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+		fadeClamp 1.0			// sets the fadeup alpha
+		fadeCycle 1			// how often fade happens in milliseconds
+		fadeAmount .1			// amount to adjust alpha per cycle
+
+		shadowX  5			// x amount for shadow offset
+		shadowY  5			// y amount for shadow offset
+		shadowColor .1 .1 .1 .25		// shadow color
+
+		font "fonts/font" 24		// font
+		smallFont "fonts/smallfont" 16		// font
+		bigFont "fonts/bigfont" 48		// font
+	}
+	
+
+	//	Notification AREA	
+	menuDef {
+		name "msgsArea"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 470 4 64 36
+
+		itemDef {
+			name tourneyMsg
+			rect 0 0 32 32
+			style 1
+			background "sprites/foe2.png"
+			visible 1
+			ownerdrawflag CG_SHOW_IF_NOTICE_PRESENT
+			decoration
+			backcolor 1 1 1 1.0
+		}
+
+		itemDef {
+			name gotMsg
+			rect 34 0 32 32
+			style 1
+			background "sprites/balloon4.png"
+			visible 1
+			ownerdrawflag CG_SHOW_IF_MSG_PRESENT
+			decoration
+			backcolor 1 1 1 1.0
+		}
+	}
+
+
+//	Graphical Obits	
+	menuDef {
+		name "obit area"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 10 62 65 12
+
+		itemDef {
+			name hudObit
+			ownerdraw CG_PLAYER_OBIT
+			rect 0 250 65 12
+			visible 1
+			decoration
+			textscale .3
+		}
+	}
+
+//drawspeed [UPS001]
+
+menuDef
+{
+	name "speedometer"
+	rect 600 188 20 12
+	visible 0
+	
+	itemDef
+	{
+		name "ups"
+		rect -2 98 20 12
+		visible 1
+		textStyle 0
+		textScale 0.30
+		foreColor 0.8 0.8 0.8 0.85
+		ownerdraw CG_SPEEDOMETER
+	}
+	
+}
+
+
+//	Chat Area
+	menuDef {
+		name "chat area"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 0 312 474 98
+
+		itemdef {
+			name chatWindow
+			ownerdraw CG_AREA_NEW_CHAT
+			rect 6 4 430 88
+			visible 1
+			decoration
+		}
+	}
+
+
+	//*****PLAYER HEALTH*****//
+
+	//health value/icon
+	menuDef {
+		name "Player"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 252 438 60 25
+
+		//THIS TEXT SHOULD BE RIGHT-ALIGNED (currently centered)	
+		itemDef {
+			name "healthok"
+			rect 0 0 60 25
+			visible 1
+			textalign 2
+			decoration
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			forecolor 1 1 1 1
+			textscale .60
+			ownerdraw CG_PLAYER_HEALTH
+			addColorRange -999 30 1 0 0 1
+			addColorRange -26 100 1 .78 0 1
+			addColorRange 101 999 1 1 1 1
+		}
+	}
+
+	menuDef {
+		name "sepha"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE	
+		rect 320 437 2 25
+
+		itemDef {
+			name "a"
+			rect 0 0 1 35
+			visible 1
+			backcolor 1 1 1 1
+			style 1
+			decoration
+		}
+	}
+
+
+	//*****ARMOR*****//
+
+//	armor value/icon
+	menuDef {
+		name "Armor"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE	
+		rect 330 438 60 25
+
+		itemDef {
+			name "armor2"
+			rect 0 0 60 25
+			visible 1
+			decoration
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			textscale .56
+			textalign 0
+			ownerdraw CG_PLAYER_ARMOR_VALUE 
+			addColorRange -999 99 1 .78 0 1
+			addColorRange 100 999 1 1 1 1
+		}
+	}
+
+
+//	GAME TIME
+	menudef {
+		name "timerFrame"
+		rect 290 170 135 44
+		fullscreen MENU_FALSE
+		visible MENU_TRUE
+
+		itemDef {
+			name "Timer"
+			textalign 2
+			style 0
+			rect 0 220 50 12
+			visible 1
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			decoration
+			forecolor 1 1 1 1
+			textscale .60
+			ownerdraw CG_LEVELTIMER
+		}
+		itemDef {
+			name "roundTimer"
+			textalign 2
+			style 0
+			rect 5 0 50 12
+			visible 1
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			decoration
+			forecolor 1 1 1 1
+			textscale .36
+			ownerdraw CG_ROUNDTIMER
+		}
+	}
+
+
+	//*****SCORES*****//
+
+//	CA
+	menuDef {
+		name "caFrame"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 545 415 48 32
+
+		itemDef {
+			name "redClanPlayers"
+			ownerdrawflag CG_SHOW_CLAN_ARENA
+			ownerdraw CG_RED_CLAN_PLYRS  
+			rect 38 15 32 20
+			visible 1
+			textscale .28
+			forecolor 1 1 1 .5
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalign 0
+			decoration
+		}
+
+		itemDef {
+			name "blueClanPlayers"
+			ownerdrawflag CG_SHOW_CLAN_ARENA
+			ownerdraw CG_BLUE_CLAN_PLYRS  
+			rect 70 15 32 20
+			visible 1
+			textscale .28
+			forecolor 1 1 1 .5
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalign 0
+			decoration
+		}
+	}
+
+//	TDM - FFA - CTF
+	menuDef {
+		name "scoresFrame"
+		rect 530 372 60 60
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+
+		itemDef {
+			name "redflag"
+			rect 22 0 39 20
+			visible 1
+			decoration
+			ownerdrawflag CG_SHOW_CTF                       
+			ownerdraw CG_RED_FLAGSTATUS
+		}
+
+		itemDef {
+			name "blueflag"
+			rect 61 0 39 20
+			visible 1
+			decoration    
+			ownerdrawflag CG_SHOW_CTF                    	
+			ownerdraw CG_BLUE_FLAGSTATUS
+		}
+
+		itemDef {
+			name "oneflagstatus"
+			rect 41 0 39 20
+			visible 1
+			decoration                	
+			ownerdraw CG_ONEFLAG_STATUS
+		}
+
+		itemDef {
+			name "harvesterRed"
+			rect 22 0 39 20
+			visible 1
+			bordercolor 1 1 1 1
+			decoration	
+			style 3
+			ownerdrawflag CG_SHOW_HARVESTER                 
+			background "icons/skull_red.png"
+		}
+
+		itemDef {
+			name "harvesterBlue"
+			rect 61 0 39 20
+			visible 1
+			bordercolor 1 1 1 .75
+			decoration	
+			style 3
+			ownerdrawflag CG_SHOW_HARVESTER                 
+			background "icons/skull_blue.png"
+		}
+
+		itemDef {
+			name "bgRed"
+			rect 22 20 39 20
+			visible 1
+			decoration
+			backcolor 1 0 0 .25
+			style 1
+		}
+
+		itemDef {
+			name "borderRed"
+			rect 20 18 39 20
+			border WINDOW_BORDER_FULL
+			ownerdrawflag CG_SHOW_IF_PLYR_IS_ON_RED
+			visible 1
+			bordersize 2
+			bordercolor .8 .82 .25 1
+		}
+
+		itemdef {
+			name "scoreRed"
+			ownerdraw CG_RED_SCORE
+			rect 25 16 32 20
+			visible 1
+			textscale .28
+			forecolor 1 1 1 1
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalign 0
+			decoration
+		}
+
+		itemDef {
+			name "bgBlue"
+			rect 61 20 39 20
+			visible 1
+			decoration
+			backcolor 0 0 1 .25
+			style 1
+		}
+
+		itemDef {
+			name "borderBlue"
+			rect 59 18 39 20
+			border WINDOW_BORDER_FULL
+			ownerdrawflag CG_SHOW_IF_PLYR_IS_ON_BLUE
+			visible 1
+			bordersize 2
+			bordercolor .8 .82 .25 1
+		}
+
+		itemdef {
+			name "scoreBlue"
+			ownerdraw CG_BLUE_SCORE
+			rect 64 16 32 20
+			visible 1
+			textscale .28
+			forecolor 1 1 1 1
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			textalign 0
+			decoration
+		}
+
+		itemDef {
+			name "scoreLimit"
+			rect 0 36 32 20
+			visible 1
+			decoration
+			forecolor 1 1 1 .9
+			textscale .28
+			textalign 0
+			textstyle ITEM_TEXTSTYLE_SHADOWED
+			cvartest "fraglimit"
+				disableCvar{"0"}
+			ownerdraw CG_CAPFRAGLIMIT
+			style 1
+		}
+	}
+
+
+//	*****Player Pickups*****//
+	menuDef {
+		name "powerup"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 550 280 74 156
+
+		itemDef {
+			name "powerupArea"
+			rect 0 0 40 26
+			visible 1
+			style 0
+			forecolor 0.8 0 0 1
+			textalign 1
+			textscale .72
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			decoration
+			ownerdraw CG_AREA_POWERUP
+			special 0		// spacing
+			align HUD_VERTICAL
+		}
+	}
+
+	menuDef {
+		name "pickups"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 575 250 25 32
+
+		itemDef {
+		//	runes
+			name "CTFPOWERUP"
+			rect 0 0 25 25
+			visible 1
+			decoration
+			ownerdraw CG_CTF_POWERUP
+			//ownerdraw CG_PLAYER_ITEM
+		}
+		itemDef {
+		//	useable pickups
+			name "playeritem"
+			rect 30 0 25 25
+			visible 1
+			decoration
+			ownerdraw CG_PLAYER_ITEM  
+		}
+	}
+
+//	player has flag
+	menuDef {
+		name "playerHasFlag"
+		fullScreen MENU_FALSE
+		visible MENU_TRUE
+		rect 583 210 385 32
+
+		itemDef {
+			name "playerRect"
+			rect 0 0 40 36
+			style 3
+			background "ui/assets/hud/flag"
+			visible 1
+			ownerdrawflag CG_SHOW_IF_PLAYER_HAS_FLAG		
+		}
+
+		itemDef {
+			name "flag"
+			rect 1 1 34 34
+			visible 1
+			decoration
+			style 1
+			ownerdraw CG_PLAYER_HASFLAG 
+		}
+
+		itemDef {
+			name "skulls"
+			rect 1 1 34 34
+			visible 1
+			decoration
+			textaligny 12
+			textalignx 0
+			textscale .333
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			ownerdraw CG_HARVESTER_SKULLS
+			//ownerdraw CG_PLAYER_ITEM
+		}
+	}
+}

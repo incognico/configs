@@ -1,0 +1,99 @@
+//---------------------------------------------.
+// nico                                        |
+//  ESL ID: 1009759 - VOIPlay nick: animaliZed |
+//   #/dev/null -> irc.rizon.net -> nico       |
+//---------------------------------------------'
+
+"%" "name"
+{
+	"%" "animaliZed" "name animaliZed"
+	"%" "nico" "name nico"
+	"%" "Other.." "messagemode name"
+}
+"%" "server"
+{
+	"%" "rcon password"
+	{
+		"%" "enter.." "messagemode rcon_password"
+	}
+	"%" "restartround"
+	{
+		"%" "1x restartround 1sec" "rcon sv_restartround 1"
+		"%" "1x restartround 5sec" "rcon sv_restartround 5"
+		"%" "3x restartround" "exec cfg/rr.cfg"
+	}
+	"%" "settings"
+	{
+		"%" "airaccelerate"
+		{
+			"%" "10" "rcon sv_airaccelerate 10"
+			"%" "100" "rcon sv_airaccelerate 100"
+		}
+		"%" "fade to black"
+		{
+			"%" "off" "rcon mp_fadetoblack 0"
+			"%" "on" "rcon mp_fadetoblack 1"
+		}
+		"%" "freezetime"
+		{
+			"%" "off" "rcon mp_freezetime 0"
+			"%" "2" "rcon mp_freezetime 2"
+			"%" "5" "rcon mp_freezetime 5"
+			"%" "6" "rcon mp_freezetime 6"
+			"%" "8" "rcon mp_freezetime 8"
+			"%" "10" "rcon mp_freezetime 10"
+		}
+		"%" "friendy fire"
+		{
+			"%" "off" "rcon mp_friendlyfire 0"
+			"%" "on" "rcon mp_friendlyfire 1"
+		}
+		"%" "timelimit"
+		{
+			"%" "off" "rcon mp_timelimit 0"
+			"%" "10" "rcon mp_timelimit 10"
+		}
+		"%" "gravity"
+		{
+			"%" "100" "rcon sv_gravity 100"
+			"%" "200" "rcon sv_gravity 200"
+			"%" "225" "rcon sv_gravity 225"
+			"%" "300" "rcon sv_gravity 300"
+			"%" "370" "rcon sv_gravity 370"
+			"%" "800" "rcon sv_gravity 800"
+		}
+		"%" "startmoney"
+		{
+			"%" "800" "rcon mp_startmoney 800"
+			"%" "2000" "rcon mp_startmoney 2000"
+			"%" "16000" "rcon mp_startmoney 16000"
+		}
+		"%" "wateraccelerate"
+		{
+			"%" "10" "rcon sv_wateraccelerate 10"
+			"%" "100" "rcon sv_wateraccelerate 100"
+		}
+	}
+	"%" "configs"
+	{
+		"%" "csdm" "exec cfg/csdm.cfg"
+		"%" "1on1" "exec cfg/1on1.cfg"
+		"%" "2on2, 3on3" "exec cfg/2on2_3on3.cfg"
+		"%" "5on5" "exec cfg/5on5.cfg"
+		"%" "fml" "exec cfg/eslfunmap.cfg"
+		"%" "quickie" "exec cfg/quickie.cfg"
+	}
+}
+"%" "saytext"
+{
+	"%" "off" "hud_saytext 0"
+	"%" "on" "hud_saytext 1"
+}
+"%" "demo"
+{
+	"%" "record" "messagemode record"
+	"%" "stop" "stop"
+}
+"%" "reload config" "exec userconfig.cfg;echo Info: Reloaded config."
+"%" "contact" "say IRC: #PUPSCR3W @ irc.quakenet.org"
+"%" "close" "slot10"

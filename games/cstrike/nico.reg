@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00 
+
+[HKEY_CURRENT_USER\Software\Valve\Steam]
+"Rate"="25000"
+"Language"="english"
+
+[HKEY_CURRENT_USER\Software\Valve\Steam\Apps\10]
+"Category"="favorite"
+"LaunchOptions"="-noforcemparms -noforcemaccel -freq 75"

@@ -1,0 +1,20 @@
+# ~/.xbindkeysrc
+# nico -> #/dev/null -> irc.rizon.net
+
+"mpc volume -5 &>/dev/null"
+  c:122 + release
+
+"mpc stop &>/dev/null"
+  c:121 + release
+
+"mpc volume +5 &>/dev/null"
+  c:123 + release
+
+"mpc prev &>/dev/null"
+  c:173 + release
+
+"mpc toggle &>/dev/null"
+  c:172 + release
+
+"mpc next &>/dev/null"
+  c:171 + release

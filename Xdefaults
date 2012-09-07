@@ -1,0 +1,178 @@
+! ~/.Xdefaults
+! nico -> #/dev/null -> irc.rizon.net
+
+! Cursor
+!Xcursor*theme:           whiteglass
+!Xcursor*.size:           24
+
+! Settings for *
+*internalBorder:         5
+*jumpScroll:             true
+*locale:                 true
+*loginShell:             true
+*saveLines:              8192
+*scrollBar:              false
+*scrollTtyOutput:        false
+
+! Settings for Xterm
+Xterm*scrollKey:         true
+
+! Settings for URxvt
+URxvt*depth:             32
+URxvt*font:              xft:Terminus:pixelsize=14
+URxvt*matcher.button:    1
+URxvt*pastableTabs:      true
+URxvt*perl-ext-common:   default,matcher
+URxvt*pointerBlank:      true
+URxvt*scrollTtyKeypress: true
+URxvt*scrollWithBuffer:  true
+URxvt*termName:          rxvt
+URxvt*transparent:       true
+URxvt*tripleclickwords:  true
+URxvt*urlLauncher:       google-chrome
+
+! Colors
+
+! Tint
+!URxvt*tintColor:    #333333
+
+! Background + Foreground
+*background:         #000000
+URxvt*background:    rgba:0000/0000/0000/dddd
+*foreground:         #cccccc
+
+! Colorset from hal
+
+! Black + DarkGrey
+!URxvt*color0:   #373838
+!URxvt*color8:   #616264
+
+! DarkRed + Red
+!URxvt*color1:   #c63e3d
+!URxvt*color9:   #ff7c76
+
+! DarkGreen + Green
+!URxvt*color2:   #83bf57
+!URxvt*color10:  #beff9b
+
+! DarkYellow + Yellow
+!URxvt*color3:   #c38a3d
+!URxvt*color11:  #ffcf80
+
+! DarkBlue + Blue
+!URxvt*color4:   #378cbb
+!URxvt*color12:  #7bb6f9
+
+! DarkMagenta + Magenta
+!URxvt*color5:   #c55f8c
+!URxvt*color13:  #ff98b9
+
+! DarkCyan + Cyan
+!URxvt*color6:   #1bc0bf
+!URxvt*color14:  #7fedfd
+
+! LightGrey + White
+!URxvt*color7:   #c8cacc
+!URxvt*color15:  #edeff2
+
+! Colorset from shickapooka800
+
+! Black + DarkGrey
+!*color0:        #676767
+!*color8:        #757575
+
+! DarkRed + Red
+!*color1:        #ea6868
+!*color9:        #ff7272
+
+! DarkGreen + Green
+!*color2:        #abcb8d
+!*color10:       #afd78a
+
+! DarkYellow + Yellow
+!*color3:        #e8ae5b
+!*color11:       #ffa75d
+
+! DarkBlue + Blue
+!*color4:        #71c5f4
+!*color12:       #67cde9
+
+! DarkMangenta + Mangenta
+!*color5:        #e2baf1
+!*color13:       #ecaee9
+
+! DarkCyan + Cyan
+!*color6:        #21f1ea
+!*color14:       #36fffc
+
+! LightGrey + White
+!*color7:        #f1f1f1
+!*color15:       #ffffff
+
+! Colorset from jesden
+
+! Black + DarkGrey
+*color0:        #888a85
+*color8:        #555753
+
+! DarkRed + Red
+*color1:        #ef2929
+*color9:        #cc0000
+
+! DarkGreen + Green
+*color2:        #8ae234
+*color10:       #73d216
+
+! DarkYellow + Yellow
+*color3:        #fce94f
+*color11:       #edd400
+
+! DarkBlue + Blue
+*color4:        #729fcf
+*color12:       #3465a4
+
+! DarkMangenta + Mangenta
+*color5:        #ad7fa8
+*color13:       #75507b
+
+! DarkCyan + Cyan
+*color6:        #e9b96e
+*color14:       #c17d11
+
+! LightGrey + White
+*color7:        #eeeeec
+*color15:       #babdb6
+
+! Colorset from dirtyepic
+
+! Black + DarkGrey
+!*color0:        #000000
+!*color8:        #666666
+
+! DarkRed + Red
+!*color1:        #b45151
+!*color9:        #fe8686
+
+! DarkGreen + Green
+!*color2:        #aece92
+!*color10:       #c5ee83
+
+! DarkYellow + Yellow
+!*color3:        #cdc673
+!*color11:       #efe58b
+
+! DarkBlue + Blue
+!*color4:        #2797d8
+!*color12:       #86cdea
+
+! DarkMangenta + Mangenta
+!*color5:        #aa6eaf
+!*color13:       #cb96ce
+
+! DarkCyan + Cyan
+!*color6:        #418179
+!*color14:       #71bebe
+
+! LightGrey + White
+!*color7:        #bebebe
+!*color15:       #ffffff

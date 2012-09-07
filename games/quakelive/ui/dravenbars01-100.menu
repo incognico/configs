@@ -1,0 +1,2649 @@
+#include "ui/menudef.h"
+
+menuDef {
+	name "HealthFrame"
+	fullScreen MENU_FALSE
+	visible MENU_TRUE	
+	rect 78 437 142 38
+
+	itemDef {
+		name "healthLine"
+		rect 0 17 170 1
+		visible 1
+		backcolor 1 1 1 1
+		decoration
+		style 1
+	}
+}
+
+menuDef {
+	name "ArmorFrame"
+	fullScreen MENU_FALSE
+	visible MENU_TRUE	
+	rect 395 437 142 38
+
+	itemDef {
+		name "armorLine"
+		rect 0 17 170 1
+		visible 1
+		backcolor 1 1 1 1
+		decoration
+		style 1
+	}
+}
+
+
+menuDef {
+	name "HealthY"
+	fullscreen MENU_FALSE
+	visible MENU_TRUE
+	rect 0 437 170 16
+	
+	itemDef {
+		name "Health01Y"
+		visible MENU_TRUE
+		rect 246 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 00 1 .8 .2 0
+		addColorRange 01 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health02Y"
+		visible MENU_TRUE
+		rect 244.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 01 1 .8 .2 0
+		addColorRange 02 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health03Y"
+		visible MENU_TRUE
+		rect 242.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 02 1 .8 .2 0
+		addColorRange 03 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health04Y"
+		visible MENU_TRUE
+		rect 240.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 03 1 .8 .2 0
+		addColorRange 04 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health05Y"
+		visible MENU_TRUE
+		rect 239.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 04 1 .8 .2 0
+		addColorRange 05 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health06Y"
+		visible MENU_TRUE
+		rect 237.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 05 1 .8 .2 0
+		addColorRange 06 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health07Y"
+		visible MENU_TRUE
+		rect 235.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 06 1 .8 .2 0
+		addColorRange 07 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health08Y"
+		visible MENU_TRUE
+		rect 234.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 07 1 .8 .2 0
+		addColorRange 08 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health09Y"
+		visible MENU_TRUE
+		rect 232.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 08 1 .8 .2 0
+		addColorRange 09 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health10Y"
+		visible MENU_TRUE
+		rect 230.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 09 1 .8 .2 0
+		addColorRange 10 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health11Y"
+		visible MENU_TRUE
+		rect 229 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 10 1 .8 .2 0
+		addColorRange 11 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health12Y"
+		visible MENU_TRUE
+		rect 227.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 11 1 .8 .2 0
+		addColorRange 12 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health13Y"
+		visible MENU_TRUE
+		rect 225.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 12 1 .8 .2 0
+		addColorRange 13 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health14Y"
+		visible MENU_TRUE
+		rect 223.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 13 1 .8 .2 0
+		addColorRange 14 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health15Y"
+		visible MENU_TRUE
+		rect 222.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 14 1 .8 .2 0
+		addColorRange 15 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health16Y"
+		visible MENU_TRUE
+		rect 220.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 15 1 .8 .2 0
+		addColorRange 16 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health17Y"
+		visible MENU_TRUE
+		rect 218.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 16 1 .8 .2 0
+		addColorRange 17 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health18Y"
+		visible MENU_TRUE
+		rect 217.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 17 1 .8 .2 0
+		addColorRange 18 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health19Y"
+		visible MENU_TRUE
+		rect 215.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 18 1 .8 .2 0
+		addColorRange 19 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health10Y"
+		visible MENU_TRUE
+		rect 213.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 19 1 .8 .2 0
+		addColorRange 20 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health11Y"
+		visible MENU_TRUE
+		rect 212 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 20 1 .8 .2 0
+		addColorRange 21 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health12Y"
+		visible MENU_TRUE
+		rect 210.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 21 1 .8 .2 0
+		addColorRange 22 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health13Y"
+		visible MENU_TRUE
+		rect 208.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 22 1 .8 .2 0
+		addColorRange 23 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health14Y"
+		visible MENU_TRUE
+		rect 206.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 23 1 .8 .2 0
+		addColorRange 24 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health15Y"
+		visible MENU_TRUE
+		rect 205.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 24 1 .8 .2 0
+		addColorRange 25 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health16Y"
+		visible MENU_TRUE
+		rect 203.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 25 1 .8 .2 0
+		addColorRange 26 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health17Y"
+		visible MENU_TRUE
+		rect 201.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 26 1 .8 .2 0
+		addColorRange 27 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health18Y"
+		visible MENU_TRUE
+		rect 200.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 27 1 .8 .2 0
+		addColorRange 28 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health19Y"
+		visible MENU_TRUE
+		rect 198.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 28 1 .8 .2 0
+		addColorRange 29 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health30Y"
+		visible MENU_TRUE
+		rect 196.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 29 1 .8 .2 0
+		addColorRange 30 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health31Y"
+		visible MENU_TRUE
+		rect 195 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 30 1 .8 .2 0
+		addColorRange 31 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health32Y"
+		visible MENU_TRUE
+		rect 193.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 31 1 .8 .2 0
+		addColorRange 32 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health33Y"
+		visible MENU_TRUE
+		rect 191.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 32 1 .8 .2 0
+		addColorRange 33 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health34Y"
+		visible MENU_TRUE
+		rect 189.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 33 1 .8 .2 0
+		addColorRange 34 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health35Y"
+		visible MENU_TRUE
+		rect 188.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 34 1 .8 .2 0
+		addColorRange 35 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health36Y"
+		visible MENU_TRUE
+		rect 186.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 35 1 .8 .2 0
+		addColorRange 36 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health37Y"
+		visible MENU_TRUE
+		rect 184.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 36 1 .8 .2 0
+		addColorRange 37 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health38Y"
+		visible MENU_TRUE
+		rect 183.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 37 1 .8 .2 0
+		addColorRange 38 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health39Y"
+		visible MENU_TRUE
+		rect 181.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 38 1 .8 .2 0
+		addColorRange 39 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health40Y"
+		visible MENU_TRUE
+		rect 179.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 39 1 .8 .2 0
+		addColorRange 40 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health41Y"
+		visible MENU_TRUE
+		rect 178 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 40 1 .8 .2 0
+		addColorRange 41 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health42Y"
+		visible MENU_TRUE
+		rect 176.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 41 1 .8 .2 0
+		addColorRange 42 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health43Y"
+		visible MENU_TRUE
+		rect 174.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 42 1 .8 .2 0
+		addColorRange 43 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health44Y"
+		visible MENU_TRUE
+		rect 172.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 43 1 .8 .2 0
+		addColorRange 44 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health45Y"
+		visible MENU_TRUE
+		rect 171.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 44 1 .8 .2 0
+		addColorRange 45 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health46Y"
+		visible MENU_TRUE
+		rect 169.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 45 1 .8 .2 0
+		addColorRange 46 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health47Y"
+		visible MENU_TRUE
+		rect 167.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 46 1 .8 .2 0
+		addColorRange 47 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health48Y"
+		visible MENU_TRUE
+		rect 166.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 47 1 .8 .2 0
+		addColorRange 48 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health49Y"
+		visible MENU_TRUE
+		rect 164.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 48 1 .8 .2 0
+		addColorRange 49 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health50Y"
+		visible MENU_TRUE
+		rect 162.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 49 1 .8 .2 0
+		addColorRange 50 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health51Y"
+		visible MENU_TRUE
+		rect 161 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 50 1 .8 .2 0
+		addColorRange 51 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health52Y"
+		visible MENU_TRUE
+		rect 159.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 51 1 .8 .2 0
+		addColorRange 52 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health53Y"
+		visible MENU_TRUE
+		rect 157.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 52 1 .8 .2 0
+		addColorRange 53 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health54Y"
+		visible MENU_TRUE
+		rect 155.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 53 1 .8 .2 0
+		addColorRange 54 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health55Y"
+		visible MENU_TRUE
+		rect 154.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 54 1 .8 .2 0
+		addColorRange 55 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health56Y"
+		visible MENU_TRUE
+		rect 152.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 55 1 .8 .2 0
+		addColorRange 56 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health57Y"
+		visible MENU_TRUE
+		rect 150.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 56 1 .8 .2 0
+		addColorRange 57 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health58Y"
+		visible MENU_TRUE
+		rect 149.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 57 1 .8 .2 0
+		addColorRange 58 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health59Y"
+		visible MENU_TRUE
+		rect 147.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 58 1 .8 .2 0
+		addColorRange 59 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health60Y"
+		visible MENU_TRUE
+		rect 145.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 59 1 .8 .2 0
+		addColorRange 60 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health61Y"
+		visible MENU_TRUE
+		rect 144 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 60 1 .8 .2 0
+		addColorRange 61 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health62Y"
+		visible MENU_TRUE
+		rect 142.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 61 1 .8 .2 0
+		addColorRange 62 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health63Y"
+		visible MENU_TRUE
+		rect 140.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 62 1 .8 .2 0
+		addColorRange 63 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health64Y"
+		visible MENU_TRUE
+		rect 138.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 63 1 .8 .2 0
+		addColorRange 64 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health65Y"
+		visible MENU_TRUE
+		rect 137.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 64 1 .8 .2 0
+		addColorRange 65 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health66Y"
+		visible MENU_TRUE
+		rect 135.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 65 1 .8 .2 0
+		addColorRange 66 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health67Y"
+		visible MENU_TRUE
+		rect 133.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 66 1 .8 .2 0
+		addColorRange 67 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health68Y"
+		visible MENU_TRUE
+		rect 132.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 67 1 .8 .2 0
+		addColorRange 68 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health69Y"
+		visible MENU_TRUE
+		rect 130.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 68 1 .8 .2 0
+		addColorRange 69 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health70Y"
+		visible MENU_TRUE
+		rect 128.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 69 1 .8 .2 0
+		addColorRange 70 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health71Y"
+		visible MENU_TRUE
+		rect 127 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 70 1 .8 .2 0
+		addColorRange 71 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health72Y"
+		visible MENU_TRUE
+		rect 125.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 71 1 .8 .2 0
+		addColorRange 72 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health73Y"
+		visible MENU_TRUE
+		rect 123.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 72 1 .8 .2 0
+		addColorRange 73 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health74Y"
+		visible MENU_TRUE
+		rect 121.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 73 1 .8 .2 0
+		addColorRange 74 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health75Y"
+		visible MENU_TRUE
+		rect 120.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 74 1 .8 .2 0
+		addColorRange 75 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health76Y"
+		visible MENU_TRUE
+		rect 118.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 75 1 .8 .2 0
+		addColorRange 76 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health77Y"
+		visible MENU_TRUE
+		rect 116.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 76 1 .8 .2 0
+		addColorRange 77 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health78Y"
+		visible MENU_TRUE
+		rect 115.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 77 1 .8 .2 0
+		addColorRange 78 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health79Y"
+		visible MENU_TRUE
+		rect 113.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 78 1 .8 .2 0
+		addColorRange 79 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health80Y"
+		visible MENU_TRUE
+		rect 111.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 79 1 .8 .2 0
+		addColorRange 80 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health81Y"
+		visible MENU_TRUE
+		rect 110 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 80 1 .8 .2 0
+		addColorRange 81 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health82Y"
+		visible MENU_TRUE
+		rect 108.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 81 1 .8 .2 0
+		addColorRange 82 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health83Y"
+		visible MENU_TRUE
+		rect 106.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 82 1 .8 .2 0
+		addColorRange 83 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health84Y"
+		visible MENU_TRUE
+		rect 104.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 83 1 .8 .2 0
+		addColorRange 84 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health85Y"
+		visible MENU_TRUE
+		rect 103.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 84 1 .8 .2 0
+		addColorRange 85 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health86Y"
+		visible MENU_TRUE
+		rect 101.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 85 1 .8 .2 0
+		addColorRange 86 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health87Y"
+		visible MENU_TRUE
+		rect 99.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 86 1 .8 .2 0
+		addColorRange 87 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health88Y"
+		visible MENU_TRUE
+		rect 98.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 87 1 .8 .2 0
+		addColorRange 88 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health89Y"
+		visible MENU_TRUE
+		rect 96.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 88 1 .8 .2 0
+		addColorRange 89 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health90Y"
+		visible MENU_TRUE
+		rect 94.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 89 1 .8 .2 0
+		addColorRange 90 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health91Y"
+		visible MENU_TRUE
+		rect 93 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 90 1 .8 .2 0
+		addColorRange 91 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health92Y"
+		visible MENU_TRUE
+		rect 91.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 91 1 .8 .2 0
+		addColorRange 92 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health93Y"
+		visible MENU_TRUE
+		rect 89.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 92 1 .8 .2 0
+		addColorRange 93 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health94Y"
+		visible MENU_TRUE
+		rect 87.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 93 1 .8 .2 0
+		addColorRange 94 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health95Y"
+		visible MENU_TRUE
+		rect 86.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 94 1 .8 .2 0
+		addColorRange 95 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health96Y"
+		visible MENU_TRUE
+		rect 84.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 95 1 .8 .2 0
+		addColorRange 96 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health97Y"
+		visible MENU_TRUE
+		rect 82.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 96 1 .8 .2 0
+		addColorRange 97 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health98Y"
+		visible MENU_TRUE
+		rect 81.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 97 1 .8 .2 0
+		addColorRange 98 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health99Y"
+		visible MENU_TRUE
+		rect 79.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 98 1 .8 .2 0
+		addColorRange 99 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Health100Y"
+		visible MENU_TRUE
+		rect 77.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_HEALTH
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 99 1 .8 .2 0
+		addColorRange 100 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+}
+
+menuDef {
+	name "ArmorY"
+	fullscreen MENU_FALSE
+	visible MENU_TRUE
+//	ownerdrawflag CG_SHOW_ANYNONTEAMGAME
+	rect 395 437 300 16
+	
+	itemDef {
+		name "Armor01Y"
+		visible MENU_TRUE
+		rect 0 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 00 1 .8 .2 0
+		addColorRange 01 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor02Y"
+		visible MENU_TRUE
+		rect 1.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 01 1 .8 .2 0
+		addColorRange 02 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor03Y"
+		visible MENU_TRUE
+		rect 3.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 02 1 .8 .2 0
+		addColorRange 03 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor04Y"
+		visible MENU_TRUE
+		rect 5.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 03 1 .8 .2 0
+		addColorRange 04 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor05Y"
+		visible MENU_TRUE
+		rect 6.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 04 1 .8 .2 0
+		addColorRange 05 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor06Y"
+		visible MENU_TRUE
+		rect 8.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 05 1 .8 .2 0
+		addColorRange 06 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor07Y"
+		visible MENU_TRUE
+		rect 10.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 06 1 .8 .2 0
+		addColorRange 07 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor08Y"
+		visible MENU_TRUE
+		rect 11.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 07 1 .8 .2 0
+		addColorRange 08 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor09Y"
+		visible MENU_TRUE
+		rect 13.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 08 1 .8 .2 0
+		addColorRange 09 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor10Y"
+		visible MENU_TRUE
+		rect 15.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 09 1 .8 .2 0
+		addColorRange 10 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor11Y"
+		visible MENU_TRUE
+		rect 17 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 10 1 .8 .2 0
+		addColorRange 11 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor12Y"
+		visible MENU_TRUE
+		rect 18.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 11 1 .8 .2 0
+		addColorRange 12 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor13Y"
+		visible MENU_TRUE
+		rect 20.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 12 1 .8 .2 0
+		addColorRange 13 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor14Y"
+		visible MENU_TRUE
+		rect 22.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 13 1 .8 .2 0
+		addColorRange 14 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor15Y"
+		visible MENU_TRUE
+		rect 23.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 14 1 .8 .2 0
+		addColorRange 15 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor16Y"
+		visible MENU_TRUE
+		rect 25.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 15 1 .8 .2 0
+		addColorRange 16 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor17Y"
+		visible MENU_TRUE
+		rect 27.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 16 1 .8 .2 0
+		addColorRange 17 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor18Y"
+		visible MENU_TRUE
+		rect 28.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 17 1 .8 .2 0
+		addColorRange 18 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor19Y"
+		visible MENU_TRUE
+		rect 30.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 18 1 .8 .2 0
+		addColorRange 19 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor10Y"
+		visible MENU_TRUE
+		rect 32.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 19 1 .8 .2 0
+		addColorRange 20 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor11Y"
+		visible MENU_TRUE
+		rect 34 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 20 1 .8 .2 0
+		addColorRange 21 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor12Y"
+		visible MENU_TRUE
+		rect 35.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 21 1 .8 .2 0
+		addColorRange 22 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor13Y"
+		visible MENU_TRUE
+		rect 37.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 22 1 .8 .2 0
+		addColorRange 23 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor14Y"
+		visible MENU_TRUE
+		rect 39.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 23 1 .8 .2 0
+		addColorRange 24 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor15Y"
+		visible MENU_TRUE
+		rect 40.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 24 1 .8 .2 0
+		addColorRange 25 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor16Y"
+		visible MENU_TRUE
+		rect 42.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 25 1 .8 .2 0
+		addColorRange 26 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor17Y"
+		visible MENU_TRUE
+		rect 44.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 26 1 .8 .2 0
+		addColorRange 27 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor18Y"
+		visible MENU_TRUE
+		rect 45.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 27 1 .8 .2 0
+		addColorRange 28 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor19Y"
+		visible MENU_TRUE
+		rect 47.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 28 1 .8 .2 0
+		addColorRange 29 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor30Y"
+		visible MENU_TRUE
+		rect 49.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 29 1 .8 .2 0
+		addColorRange 30 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor31Y"
+		visible MENU_TRUE
+		rect 51 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 30 1 .8 .2 0
+		addColorRange 31 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor32Y"
+		visible MENU_TRUE
+		rect 52.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 31 1 .8 .2 0
+		addColorRange 32 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor33Y"
+		visible MENU_TRUE
+		rect 54.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 32 1 .8 .2 0
+		addColorRange 33 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor34Y"
+		visible MENU_TRUE
+		rect 56.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 33 1 .8 .2 0
+		addColorRange 34 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor35Y"
+		visible MENU_TRUE
+		rect 57.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 34 1 .8 .2 0
+		addColorRange 35 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor36Y"
+		visible MENU_TRUE
+		rect 59.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 35 1 .8 .2 0
+		addColorRange 36 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor37Y"
+		visible MENU_TRUE
+		rect 61.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 36 1 .8 .2 0
+		addColorRange 37 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor38Y"
+		visible MENU_TRUE
+		rect 62.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 37 1 .8 .2 0
+		addColorRange 38 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor39Y"
+		visible MENU_TRUE
+		rect 64.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 38 1 .8 .2 0
+		addColorRange 39 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor40Y"
+		visible MENU_TRUE
+		rect 66.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 39 1 .8 .2 0
+		addColorRange 40 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor41Y"
+		visible MENU_TRUE
+		rect 68 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 40 1 .8 .2 0
+		addColorRange 41 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor42Y"
+		visible MENU_TRUE
+		rect 69.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 41 1 .8 .2 0
+		addColorRange 42 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor43Y"
+		visible MENU_TRUE
+		rect 71.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 42 1 .8 .2 0
+		addColorRange 43 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor44Y"
+		visible MENU_TRUE
+		rect 73.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 43 1 .8 .2 0
+		addColorRange 44 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor45Y"
+		visible MENU_TRUE
+		rect 74.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 44 1 .8 .2 0
+		addColorRange 45 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor46Y"
+		visible MENU_TRUE
+		rect 76.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 45 1 .8 .2 0
+		addColorRange 46 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor47Y"
+		visible MENU_TRUE
+		rect 78.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 46 1 .8 .2 0
+		addColorRange 47 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor48Y"
+		visible MENU_TRUE
+		rect 79.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 47 1 .8 .2 0
+		addColorRange 48 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor49Y"
+		visible MENU_TRUE
+		rect 81.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 48 1 .8 .2 0
+		addColorRange 49 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor50Y"
+		visible MENU_TRUE
+		rect 83.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 49 1 .8 .2 0
+		addColorRange 50 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor51Y"
+		visible MENU_TRUE
+		rect 85 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 50 1 .8 .2 0
+		addColorRange 51 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor52Y"
+		visible MENU_TRUE
+		rect 86.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 51 1 .8 .2 0
+		addColorRange 52 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor53Y"
+		visible MENU_TRUE
+		rect 88.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 52 1 .8 .2 0
+		addColorRange 53 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor54Y"
+		visible MENU_TRUE
+		rect 90.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 53 1 .8 .2 0
+		addColorRange 54 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor55Y"
+		visible MENU_TRUE
+		rect 91.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 54 1 .8 .2 0
+		addColorRange 55 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor56Y"
+		visible MENU_TRUE
+		rect 93.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 55 1 .8 .2 0
+		addColorRange 56 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor57Y"
+		visible MENU_TRUE
+		rect 95.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 56 1 .8 .2 0
+		addColorRange 57 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor58Y"
+		visible MENU_TRUE
+		rect 96.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 57 1 .8 .2 0
+		addColorRange 58 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor59Y"
+		visible MENU_TRUE
+		rect 98.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 58 1 .8 .2 0
+		addColorRange 59 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor60Y"
+		visible MENU_TRUE
+		rect 100.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 59 1 .8 .2 0
+		addColorRange 60 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor61Y"
+		visible MENU_TRUE
+		rect 102 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 60 1 .8 .2 0
+		addColorRange 61 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor62Y"
+		visible MENU_TRUE
+		rect 103.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 61 1 .8 .2 0
+		addColorRange 62 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor63Y"
+		visible MENU_TRUE
+		rect 105.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 62 1 .8 .2 0
+		addColorRange 63 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor64Y"
+		visible MENU_TRUE
+		rect 107.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 63 1 .8 .2 0
+		addColorRange 64 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor65Y"
+		visible MENU_TRUE
+		rect 108.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 64 1 .8 .2 0
+		addColorRange 65 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor66Y"
+		visible MENU_TRUE
+		rect 110.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 65 1 .8 .2 0
+		addColorRange 66 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor67Y"
+		visible MENU_TRUE
+		rect 112.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 66 1 .8 .2 0
+		addColorRange 67 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor68Y"
+		visible MENU_TRUE
+		rect 113.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 67 1 .8 .2 0
+		addColorRange 68 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor69Y"
+		visible MENU_TRUE
+		rect 115.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 68 1 .8 .2 0
+		addColorRange 69 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor70Y"
+		visible MENU_TRUE
+		rect 117.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 69 1 .8 .2 0
+		addColorRange 70 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor71Y"
+		visible MENU_TRUE
+		rect 119 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 70 1 .8 .2 0
+		addColorRange 71 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor72Y"
+		visible MENU_TRUE
+		rect 120.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 71 1 .8 .2 0
+		addColorRange 72 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor73Y"
+		visible MENU_TRUE
+		rect 122.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 72 1 .8 .2 0
+		addColorRange 73 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor74Y"
+		visible MENU_TRUE
+		rect 124.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 73 1 .8 .2 0
+		addColorRange 74 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor75Y"
+		visible MENU_TRUE
+		rect 125.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 74 1 .8 .2 0
+		addColorRange 75 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor76Y"
+		visible MENU_TRUE
+		rect 127.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 75 1 .8 .2 0
+		addColorRange 76 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor77Y"
+		visible MENU_TRUE
+		rect 129.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 76 1 .8 .2 0
+		addColorRange 77 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor78Y"
+		visible MENU_TRUE
+		rect 130.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 77 1 .8 .2 0
+		addColorRange 78 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor79Y"
+		visible MENU_TRUE
+		rect 132.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 78 1 .8 .2 0
+		addColorRange 79 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor80Y"
+		visible MENU_TRUE
+		rect 134.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 79 1 .8 .2 0
+		addColorRange 80 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor81Y"
+		visible MENU_TRUE
+		rect 136 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 80 1 .8 .2 0
+		addColorRange 81 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor82Y"
+		visible MENU_TRUE
+		rect 137.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 81 1 .8 .2 0
+		addColorRange 82 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor83Y"
+		visible MENU_TRUE
+		rect 139.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 82 1 .8 .2 0
+		addColorRange 83 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor84Y"
+		visible MENU_TRUE
+		rect 141.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 83 1 .8 .2 0
+		addColorRange 84 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor85Y"
+		visible MENU_TRUE
+		rect 142.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 84 1 .8 .2 0
+		addColorRange 85 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor86Y"
+		visible MENU_TRUE
+		rect 144.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 85 1 .8 .2 0
+		addColorRange 86 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor87Y"
+		visible MENU_TRUE
+		rect 146.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 86 1 .8 .2 0
+		addColorRange 87 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor88Y"
+		visible MENU_TRUE
+		rect 147.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 87 1 .8 .2 0
+		addColorRange 88 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor89Y"
+		visible MENU_TRUE
+		rect 149.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 88 1 .8 .2 0
+		addColorRange 89 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor90Y"
+		visible MENU_TRUE
+		rect 151.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 89 1 .8 .2 0
+		addColorRange 90 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor91Y"
+		visible MENU_TRUE
+		rect 153 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 90 1 .8 .2 0
+		addColorRange 91 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor92Y"
+		visible MENU_TRUE
+		rect 154.7 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 91 1 .8 .2 0
+		addColorRange 92 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor93Y"
+		visible MENU_TRUE
+		rect 156.4 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 92 1 .8 .2 0
+		addColorRange 93 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor94Y"
+		visible MENU_TRUE
+		rect 158.1 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 93 1 .8 .2 0
+		addColorRange 94 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor95Y"
+		visible MENU_TRUE
+		rect 159.8 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 94 1 .8 .2 0
+		addColorRange 95 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor96Y"
+		visible MENU_TRUE
+		rect 161.5 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 95 1 .8 .2 0
+		addColorRange 96 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor97Y"
+		visible MENU_TRUE
+		rect 163.2 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 96 1 .8 .2 0
+		addColorRange 97 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor98Y"
+		visible MENU_TRUE
+		rect 164.9 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 97 1 .8 .2 0
+		addColorRange 98 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor99Y"
+		visible MENU_TRUE
+		rect 166.6 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 98 1 .8 .2 0
+		addColorRange 99 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+
+	itemDef {
+		name "Armor100Y"
+		visible MENU_TRUE
+		rect 168.3 0 1.7 16
+		decoration
+		ownerdraw CG_PLAYER_ARMOR_VALUE
+		style WINDOW_STYLE_FILLED
+		background "ui/assets/score/statsfillm.png"
+		addColorRange -999 99 1 .8 .2 0
+		addColorRange 100 100 1 .78 0 .5
+		addColorRange 101 999 1 1 1 .5
+	}
+}
