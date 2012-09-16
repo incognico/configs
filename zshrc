@@ -87,11 +87,12 @@ export LESSCHARSET="utf-8"
 # }}}
 
 # {{{ misc settings
+#export COLORTERM="yes"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PAGER="less"
 export READNULLCMD="cat"
-#export COLORTERM="yes"
+export PORTSEARCH_OUTFIELDS=name,path,info,www
 limit coredumpsize 0
 #unset MAILCHECK mailpath
 typeset -U path cdpath fpath manpath
