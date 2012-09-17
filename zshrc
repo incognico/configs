@@ -87,14 +87,13 @@ export LESSCHARSET="utf-8"
 # }}}
 
 # {{{ misc settings
-#export COLORTERM="yes"
+cuname="$(uname)"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PAGER="less"
 export READNULLCMD="cat"
 export PORTSEARCH_OUTFIELDS=name,path,info,www
 limit coredumpsize 0
-#unset MAILCHECK mailpath
 typeset -U path cdpath fpath manpath
 stty -ixon -ixoff 2>/dev/null
 # }}}
@@ -162,7 +161,7 @@ zstyle ':completion:*:kill:*' force-list always
 zstyle ':completion:*:processes' insert-ids
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 
-case $(uname) in
+case $cuname in
    Linux)
       if [[ $UID -eq 0 ]]; then
          zstyle ':completion:*:processes' command 'ps axf -o pid,%cpu,%mem,tty,cputime,cmd | sed /ps/d | grep -vE "sed|grep"'
@@ -174,10 +173,6 @@ esac
 
 # misc completion settings
 compctl -g '*(-/)' + -g '.*(-/)' -v cd pushd
-compctl -g '*.ebuild' ebuild
-compctl -g '*.torrent' hrktorrent
-compdef _hosts unkey_host
-#compdef _nothing etc-update dispatch-conf fixpackages
 # }}}
 
 # {{{ bindings
@@ -186,8 +181,8 @@ bindkey ' ' magic-space
 bindkey '\e[3~' delete-char
 bindkey '\e[5~' up-history
 bindkey '\e[6~' down-history
-bindkey '\e[A'  history-beginning-search-backward-end
-bindkey '\e[B'  history-beginning-search-forward-end
+bindkey '\e[A' history-beginning-search-backward-end
+bindkey '\e[B' history-beginning-search-forward-end
 
 case $TERM in
    xterm*|rxvt*|screen*)
@@ -227,7 +222,7 @@ alias la='ls -A'
 alias ll='ls -l'
 alias lla='ls -Al'
 
-case $(uname) in
+case $cuname in
    # iOS is Darwin but uses gnuls
    Linux|Darwin)
       alias ls='ls -CFhsv --color=auto'
@@ -264,42 +259,18 @@ alias zreload='source ~/.zshrc'
 # }}}
 
 # {{{ functions
-#cp2c() { scp $* c: }
-#cp2tmp() { scp $* c:public_html/tmp }
 mkcd() { mkdir -p "$*"; cd "$*" }
 propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
-unkey_host() { [[ ! $# -eq 1 ]] && echo "Usage: unkey_host <hostname>" || sed -i -e "/$1/d" $HOME/.ssh/known_hosts }
 # }}}
 
 # {{{ host specific aliases and functions
 case $HOST in
-   devnull)
+   k)
       alias mscreen='screen -aADRS irssi irssi'
       if [[ ! -z $(screen -list | grep irssi | grep Detached) ]]; then
          screen -aADRS irssi
       fi
       ;;
-#   perficio)
-#      if [[ $UID -eq 0 ]]; then
-#         export PATH="/usr/local/libexec/ccache:$PATH"
-#         export CCACHE_PATH="/usr/bin:/usr/local/bin"
-#         export CCACHE_DIR="/var/tmp/ccache"
-#         export CCACHE_LOGFILE="/var/log/ccache.log"
-#      fi
-#      ;;
-#   uptempo)
-#      if [[ $UID -eq 0 ]]; then
-#         alias kmake='make -j3 && make install && make modules_install'
-#         alias python-updater='python-updater -P paludis'
-#         alias srcenv='env-update && source /etc/zsh/zprofile && source ~/.zshrc'
-#         alias uninstall-unused='paludis --uninstall-unused && reconcilio'
-#         alias vipk='vim /etc/paludis/keywords.conf'
-#         alias vipo='vim /etc/paludis/use.conf'
-#         alias vipu='vim /etc/paludis/package_unmask.conf'
-#         alias vipm='vim /etc/paludis/package_mask.conf'
-#         alias vipb='vim /etc/paludis/bashrc'
-#      fi
-#      ;;
 esac
 # }}}
 
