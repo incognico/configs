@@ -92,7 +92,6 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PAGER="less"
 export READNULLCMD="cat"
-export PORTSEARCH_OUTFIELDS=name,path,info,www
 limit coredumpsize 0
 typeset -U path cdpath fpath manpath
 stty -ixon -ixoff 2>/dev/null
@@ -124,7 +123,7 @@ NOTIFY \
 NO_RECEXACT \
 PROMPT_CR \
 PUSHD_IGNORE_DUPS \
-NO_PUSHD_MINUS \
+PUSHD_MINUS \
 PUSHD_SILENT \
 PUSHD_TO_HOME \
 NO_RECEXACT \
@@ -267,8 +266,10 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 case $HOST in
    k)
       alias mscreen='screen -aADRS irssi irssi'
-      if [[ ! -z $(screen -list | grep irssi | grep Detached) ]]; then
-         screen -aADRS irssi
+      if [[ $TERM != screen* ]]; then
+         if [[ ! -z $(screen -list | grep irssi | grep Detached) ]]; then
+            screen -aADRS irssi
+         fi
       fi
       ;;
 esac

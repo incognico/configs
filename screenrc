@@ -1,33 +1,37 @@
 # ~/.screenrc
 # nico -> #/dev/null -> irc.rizon.net
 
-shell              -$SHELL
+shell           -$SHELL
 
-attrcolor b        ".I"
-defbce             on
-defflow            off
-defutf8            on
-defscrollback      1000
-hardstatus         off
-msgwait            2
-msgminwait         0
-nonblock           on
-silencewait        15
-startup_message    off
-vbell              off
+hardstatus      off
+attrcolor b     ".I"
+defbce          on
+defflow         off
+defnonblock     on
+defscrollback   2048
+defutf8         on
+msgminwait      0
+msgwait         1
+silencewait     15
+startup_message off
+vbell           off
 
-bindkey -k         k1 select 0
-bindkey -k         k2 select 1
-bindkey -k         k3 select 2
-bindkey -k         k4 select 3
-bindkey -k         k5 select 4
-bindkey -k         k6 select 5
-bindkey -k         k7 select 6
-bindkey -k         k8 select 7
-bindkey -k         k9 select 8
+bindkey -k      k1 select 0
+bindkey -k      k2 select 1
+bindkey -k      k3 select 2
+bindkey -k      k4 select 3
+bindkey -k      k5 select 4
+bindkey -k      k6 select 5
+bindkey -k      k7 select 6
+bindkey -k      k8 select 7
+bindkey -k      k9 select 8
+bindkey -k      k; select 9
+bindkey -k      F1 select 10
+bindkey -k      F2 mapdefault
+bindkey         "\024" mapdefault
 
-select             0
+select          0
 
-termcapinfo        xterm*|rxvt* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-termcapinfo        xterm*|rxvt* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
-termcapinfo        linux*|xterm*|rxvt* OP
+termcapinfo     xterm*|rxvt* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+termcapinfo     xterm*|rxvt* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
+termcapinfo     linux*|xterm*|rxvt* OP
