@@ -4,7 +4,7 @@
 shell           -$SHELL
 
 hardstatus      off
-attrcolor b     ".I"
+attrcolor       b ".I"
 defbce          on
 defflow         off
 defnonblock     on
@@ -34,4 +34,5 @@ select          0
 
 termcapinfo     xterm*|rxvt* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 termcapinfo     xterm*|rxvt* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
+termcapinfo     xterm*|rxvt* K2=\EOE
 termcapinfo     linux*|xterm*|rxvt* OP
