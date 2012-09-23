@@ -2,14 +2,13 @@
 # nico -> #/dev/null -> irc.rizon.net
 
 shell           -$SHELL
+term            "screen-256color"
 
-hardstatus      off
-attrcolor       b ".I"
-defbce          on
 defflow         off
 defnonblock     on
-defscrollback   2048
+defscrollback   81960
 defutf8         on
+hardstatus      off
 msgminwait      0
 msgwait         1
 silencewait     15
@@ -32,7 +31,5 @@ bindkey         "\024" mapdefault
 
 select          0
 
-termcapinfo     xterm*|rxvt* 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 termcapinfo     xterm*|rxvt* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
-termcapinfo     xterm*|rxvt* K2=\EOE
 termcapinfo     linux*|xterm*|rxvt* OP

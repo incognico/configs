@@ -243,7 +243,6 @@ alias cl='clear'
 alias confcat='grep -vE "^#|^$"'
 alias df='df -h'
 alias du='du -hc'
-alias htop='TERM=xterm htop'
 alias ih='fc -RI'
 alias j='jobs -l'
 alias su='su -'
@@ -267,11 +266,11 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 case $HOST in
    k)
       alias mscreen='screen -aADRS irssi irssi'
-      if [[ $TERM != screen* ]]; then
-         if [[ ! -z $(screen -list | grep irssi | grep Detached) ]]; then
-            screen -aADRS irssi
-         fi
-      fi
+      #if [[ $TERM != screen* ]]; then
+      #   if [[ ! -z $(screen -list | grep irssi | grep Detached) ]]; then
+      #      screen -aADRS irssi
+      #   fi
+      #fi
       ;;
 esac
 # }}}
