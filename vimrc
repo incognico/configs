@@ -28,7 +28,6 @@ set t_vb= "shut the fuck up
 set ts=3
 "set undofile
 
-"set term=linux
 set enc=utf-8
 set encoding=utf-8
 set fenc=utf-8
@@ -52,7 +51,7 @@ nnoremap / /\v
 vnoremap / /\v
 
 map Q gq
-map <F11> :set invpaste<CR>
-set pastetoggle=<F11>
+map [23~ :set invpaste<CR>
+set pastetoggle=[23~
 
 let g:html_use_css=1
