@@ -36,7 +36,7 @@ fi
 
 # {{{ term title (after prompt)
 case $TERM in
-   *term|rxvt*|screen*)
+   xterm*|rxvt*|screen*)
       precmd() { print -Pn "\e]0;%n@%m - %~\a" }
       preexec() { print -Pn "\e]0;%n@%m - $1\a" }
       ;;
@@ -265,12 +265,7 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 # {{{ host specific aliases and functions
 case $HOST in
    k)
-      alias mscreen='screen -aADRS irssi irssi'
-      #if [[ $TERM != screen* ]]; then
-      #   if [[ ! -z $(screen -list | grep irssi | grep Detached) ]]; then
-      #      screen -aADRS irssi
-      #   fi
-      #fi
+      alias msess='tmux attach-session -d -t main || tmux new-session -s main irssi'
       ;;
 esac
 # }}}
