@@ -174,8 +174,11 @@ device		ums		# Mouse
 
 ### Custom entries:
 
-# GEOM
+# GEOM Mirror
 options     GEOM_MIRROR
+
+# NULLFS
+options     NULLFS
 
 # Quota
 options     QUOTA
@@ -184,10 +187,16 @@ options     QUOTA
 options     DEVICE_POLLING
 options     HZ=1000
 
+# ePair + Bridging
+device      epair
+device      if_bridge
+
+# VIRTNET
+options     VIMAGE
+
 # PF
 device      pf
 device      pflog
-device      pfsync
 
 # ALTQ
 options     ALTQ
