@@ -267,6 +267,8 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 case $HOST in
    k)
       alias msess='tmux attach-session -d -t main || tmux new-session -s main irssi'
+      alias geoiplookup='geoiplookup -d /usr/local/share/GeoIP_k'
+      alias geoiplookup6='geoiplookup6 -d /usr/local/share/GeoIP_k'
       ;;
 esac
 # }}}
