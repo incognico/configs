@@ -62,6 +62,7 @@ fi
 # }}}
 
 # {{{ history
+DIRSTACKSIZE="25"
 HISTFILE="${HOME}/.zsh_history"
 HISTSIZE="8192"
 SAVEHIST="${HISTSIZE}"
@@ -87,9 +88,9 @@ export LESSCHARSET="utf-8"
 # }}}
 
 # {{{ misc settings
-cuname="$(uname)"
+cuname=$(uname)
 export VISUAL="vim"
-export EDITOR="$VISUAL"
+export EDITOR=$VISUAL
 export PAGER="less"
 export READNULLCMD="cat"
 limit coredumpsize 0
@@ -265,7 +266,7 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 
 # {{{ host specific aliases and functions
 case $HOST in
-   k)
+   k.lifeisabug.com)
       alias msess='tmux attach-session -d -t main || tmux new-session -s main irssi'
       alias geoiplookup='geoiplookup -d /usr/local/share/GeoIP_k'
       alias geoiplookup6='geoiplookup6 -d /usr/local/share/GeoIP_k'
