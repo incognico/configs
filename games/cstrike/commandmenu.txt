@@ -95,5 +95,5 @@
 	"%" "stop" "stop"
 }
 "%" "reload config" "exec userconfig.cfg;echo Info: Reloaded config."
-"%" "contact" "say IRC: #PUPSCR3W @ irc.quakenet.org"
+"%" "contact" "say IRC: #k @ irc.rizon.net"
 "%" "close" "slot10"
