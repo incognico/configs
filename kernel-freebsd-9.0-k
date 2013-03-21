@@ -174,31 +174,37 @@ device		ums		# Mouse
 
 ### Custom entries:
 
-# GEOM Mirror
+# geom(8) mirror
 options     GEOM_MIRROR
 
-# NULLFS
+# nullfs(5)
 options     NULLFS
 
-# Quota
+# quota(1)
 options     QUOTA
 
-# Polling
+# rctl(8)
+options RACCT
+options RCTL
+
+# polling(4)
 options     DEVICE_POLLING
 options     HZ=1000
 
-# ePair + Bridging
+# epair(4)
 device      epair
+
+# if_bridge(4)
 device      if_bridge
 
-# VIRTNET
+# VIMAGE/VNET
 options     VIMAGE
 
-# PF
+# pf(4)
 device      pf
 device      pflog
 
-# ALTQ
+# altq(4)
 options     ALTQ
 options     ALTQ_CBQ          # Class Bases Queuing (CBQ)
 options     ALTQ_RED          # Random Early Detection (RED)
@@ -207,7 +213,7 @@ options     ALTQ_HFSC         # Hierarchical Packet Scheduler (HFSC)
 options     ALTQ_PRIQ         # Priority Queuing (PRIQ)
 options     ALTQ_NOPCC        # Required for SMP build
 
-# IPSec
+# ipsec(4)
 device      crypto
 options     IPSEC              # IP security
 options     IPSEC_NAT_T        # NAT-T support, UDP encap of ESP

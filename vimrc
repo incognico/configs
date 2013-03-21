@@ -54,4 +54,12 @@ map Q gq
 map [23~ :set invpaste<CR>
 set pastetoggle=[23~
 
-let g:html_use_css=1
+let html_use_css      =1
+let perl_include_pod  =1
+let perl_extended_vars=1
+
+set whichwrap+=<,>,[,]
+
+command Pdoc :!perldoc %
+command Pchk :!perl -c %
+command Prun :!perl %

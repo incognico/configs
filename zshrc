@@ -56,9 +56,9 @@ if [[ -n "${PATH/*$HOME\/bin:*}" ]]; then
    export PATH="${PATH}:${HOME}/bin"
 fi
 
-if [[ -d "${HOME}/tmp" ]]; then
-   export TMPDIR="${HOME}/tmp"
-fi
+#if [[ -d "${HOME}/tmp" ]]; then
+#   export TMPDIR="${HOME}/tmp"
+#fi
 # }}}
 
 # {{{ history
