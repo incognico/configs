@@ -19,22 +19,24 @@ Xterm*scrollKey:         true
 
 ! Settings for URxvt
 URxvt*depth:             32
-URxvt*font:              xft:Terminus:pixelsize=14
+URxvt*font:              xft:Terminus:pixelsize=16
+URxvt*facename:          xft:Terminus:pixelsize=16
 URxvt*matcher.button:    1
 URxvt*pastableTabs:      true
 URxvt*perl-ext-common:   default,matcher
 URxvt*pointerBlank:      true
 URxvt*scrollTtyKeypress: true
 URxvt*scrollWithBuffer:  true
-URxvt*termName:          rxvt
+!URxvt*termName:          rxvt
 URxvt*transparent:       true
 URxvt*tripleclickwords:  true
-URxvt*urlLauncher:       google-chrome
+!URxvt*urlLauncher:       chromium
+URxvt*url-launcher:       google-chrome-beta
 
 ! Colors
 
 ! Tint
-!URxvt*tintColor:    #333333
+URxvt*tintColor:     #222222
 
 ! Background + Foreground
 *background:         #000000
