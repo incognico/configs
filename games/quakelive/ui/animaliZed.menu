@@ -841,7 +841,7 @@ menuDef {
 	name "obits"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 146 5 76 15 
+	rect 158 5 76 15 
 
 	itemDef {
 		name "obituaries"
@@ -1865,7 +1865,7 @@ menuDef {
 menuDef {
 	name "skillRating"
 	visible MENU_TRUE
-	rect 7 53 13 6 
+	rect 6 58 13 6 
 
 	itemDef {
 		visible 1
