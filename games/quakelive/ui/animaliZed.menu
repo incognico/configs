@@ -6,7 +6,7 @@ menuDef {
 	name "healthIndicator"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 180 435 104 36
+	rect 200 435 104 36
     ownerdrawflag 0
 	
 	itemDef {
@@ -41,7 +41,7 @@ menuDef {
 	name "armorIndicator"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 350 435 104 36
+	rect 330 435 104 36
     ownerdrawflag 0
 	itemDef {
 		name "armorIndicatorIcon" 
@@ -74,25 +74,25 @@ menuDef {
 	name "ammoIndicator"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 280 404 62 50 // area
+	rect 0 408 62 50 // area
 	ownerdrawflag 0
 	itemDef {
 		name "ammoIndicatorIcon" 
 		rect 21 0 20 20
-		visible 1
+		visible 0
 		decoration
 		ownerdraw CG_PLAYER_AMMO_ICON
 	}
 
 	itemDef {
 		name "ammoIndicatorCounter"
-		rect 0 28 62 22
+		rect 0 30 68 22
 		visible 1
 		textalign 0
 		decoration
 		textstyle 0
 		forecolor 1 1 1 0.8
-		textscale 0.6
+		textscale 0.4
 		ownerdraw CG_PLAYER_AMMO_VALUE
 
 		addColorRange -999 5 1 0.6 0.5 0.8
@@ -885,7 +885,7 @@ menuDef {
 	name "box"
 	fullScreen MENU_FALSE
 	visible MENU_TRUE
-	rect 180 474 103 2
+	rect 200 474 103 2
     ownerdrawflag 0
 	itemDef {
 	  name "boxBackground"
