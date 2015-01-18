@@ -64,7 +64,7 @@ fi
 # {{{ history
 DIRSTACKSIZE="25"
 HISTFILE="${HOME}/.zsh_history"
-HISTSIZE="8192"
+HISTSIZE="16384"
 SAVEHIST="${HISTSIZE}"
 # }}}
 
@@ -254,7 +254,7 @@ alias vixd='vim ~/.Xdefaults'
 alias vixi='vim ~/.xinitrc'
 alias viz='vim ~/.zshrc'
 alias wcat='wget -q -O -'
-alias wipe='screen -wipe'
+alias wgetn='wget --no-check-certificate'
 alias x='cd;clear'
 alias zreload='source ~/.zshrc'
 # }}}
@@ -266,7 +266,7 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 
 # {{{ host specific aliases and functions
 case $HOST in
-   k.lifeisabug.com)
+   997.lifeisabug.com)
       alias msess='tmux attach-session -d -t main || tmux new-session -s main irssi'
       alias geoiplookup='geoiplookup -d /usr/local/share/GeoIP_k'
       alias geoiplookup6='geoiplookup6 -d /usr/local/share/GeoIP_k'
