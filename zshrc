@@ -44,10 +44,18 @@ esac
 # }}}
 
 # {{{ dir colors
-if [[ -f "/etc/DIR_COLORS" && -x $(which dircolors) ]]; then
-   eval $(dircolors -b /etc/DIR_COLORS)
-elif [[ -x $(which dircolors) ]]; then
-   eval $(dircolors -b)
+if [[ -x $(which dircolors) ]]; then
+   if [[ -f "$HOME/.zsh/LS_COLORS" ]]; then
+      eval $(dircolors -b "$HOME/.zsh/LS_COLORS")
+   elif [[ -f "/etc/DIR_COLORS" ]]; then
+      eval $(dircolors -b /etc/DIR_COLORS)
+   else
+      eval $(dircolors -b)
+   fi
+fi
+
+if [[ -f "$HOME/.zsh/zsh-syntax-highlighting-filetypes.zsh" ]]; then
+   source "$HOME/.zsh/zsh-syntax-highlighting-filetypes.zsh"
 fi
 # }}}
 
@@ -142,7 +150,7 @@ zstyle ':completion:*:match:*' original only
 zstyle -e ':completion:*:approximate:*' max-errors 'reply=($((($#PREFIX+$#SUFFIX)/2))numeric)'
 zstyle ':completion:*' expand yes
 # lower to upper but not vice versa:
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' squeeze-shlashes yes
 
 # descriptions
