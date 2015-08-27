@@ -7,7 +7,6 @@ set gdefault
 set hidden
 set history=512
 set hlsearch
-set hlsearch
 set ignorecase
 set incsearch
 "set list
@@ -19,7 +18,6 @@ set nocompatible
 set nomodeline
 set ruler
 set showmatch
-set smartcase
 set smartcase
 set smarttab
 set sw=3
