@@ -70,9 +70,9 @@ fi
 # }}}
 
 # {{{ history
-DIRSTACKSIZE="25"
+DIRSTACKSIZE="30"
 HISTFILE="${HOME}/.zsh_history"
-HISTSIZE="16384"
+HISTSIZE="32768"
 SAVEHIST="${HISTSIZE}"
 # }}}
 
@@ -97,9 +97,11 @@ export LESSCHARSET="utf-8"
 
 # {{{ misc settings
 cuname=$(uname)
-export VISUAL="vim"
-export EDITOR=$VISUAL
-export PAGER="less"
+if [[ -x $(which vim) ]]; then
+   export VISUAL="vim"
+   export EDITOR=$VISUAL
+fi
+[[ -x $(which less) ]] && export PAGER="less"
 export READNULLCMD="cat"
 limit coredumpsize 0
 typeset -U path cdpath fpath manpath
@@ -184,8 +186,6 @@ compctl -g '*(-/)' + -g '.*(-/)' -v cd pushd
 # }}}
 
 # {{{ bindings
-bindkey -e
-bindkey ' ' magic-space
 bindkey '\e[3~' delete-char
 bindkey '\e[5~' up-history
 bindkey '\e[6~' down-history
@@ -194,8 +194,8 @@ bindkey '\e[B' history-beginning-search-forward-end
 
 case $TERM in
    xterm*|rxvt*|screen*)
-      bindkey "^[[1~" beginning-of-line
-      bindkey "^[[4~" end-of-line
+      bindkey '\e[1~' beginning-of-line
+      bindkey '\e[4~' end-of-line
       bindkey '\e[7~' beginning-of-line
       bindkey '\e[8~' end-of-line
       ;;
@@ -223,7 +223,6 @@ alias -g W='|wc -l'
 alias -g X='|xargs'
 alias ...='../..'
 alias ....='../../..'
-alias .....='cd ../../../..'
 alias grep='grep --color=auto'
 alias l='ls'
 alias la='ls -A'
@@ -254,15 +253,15 @@ alias df='df -h'
 alias du='du -hc'
 alias ih='fc -RI'
 alias j='jobs -l'
-alias su='su -'
-alias vi='vim'
-alias view='vim -R'
+[[ -x $(which vim) ]] && alias vi='vim'
 alias vivi='vim ~/.vimrc'
 alias vixd='vim ~/.Xdefaults'
 alias vixi='vim ~/.xinitrc'
 alias viz='vim ~/.zshrc'
-alias wcat='wget -q -O -'
-alias wgetn='wget --no-check-certificate'
+if [[ -x $(which wget) ]]; then
+   alias wcat='wget -q -O -'
+   alias wgetn='wget --no-check-certificate'
+fi
 alias x='cd;clear'
 alias zreload='source ~/.zshrc'
 # }}}
