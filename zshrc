@@ -194,10 +194,10 @@ bindkey '\e[B' history-beginning-search-forward-end
 
 case $TERM in
    xterm*|rxvt*|screen*)
-      #bindkey '\e[7~' beginning-of-line
-      #bindkey '\e[8~' end-of-line
       bindkey "^[[1~" beginning-of-line
       bindkey "^[[4~" end-of-line
+      bindkey '\e[7~' beginning-of-line
+      bindkey '\e[8~' end-of-line
       ;;
    linux)
       bindkey '\e[1~' beginning-of-line
