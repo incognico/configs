@@ -191,23 +191,12 @@ bindkey '\e[5~' up-history
 bindkey '\e[6~' down-history
 bindkey '\e[A' history-beginning-search-backward-end
 bindkey '\e[B' history-beginning-search-forward-end
-
-case $TERM in
-   xterm*|rxvt*|screen*)
-      bindkey '\e[1~' beginning-of-line
-      bindkey '\e[4~' end-of-line
-      bindkey '\e[7~' beginning-of-line
-      bindkey '\e[8~' end-of-line
-      ;;
-   linux)
-      bindkey '\e[1~' beginning-of-line
-      bindkey '\e[4~' end-of-line
-      ;;
-   *)
-      bindkey '\e[H~' beginning-of-line
-      bindkey '\e[F~' end-of-line
-      ;;
-esac
+bindkey '\e[1~' beginning-of-line
+bindkey '\e[4~' end-of-line
+bindkey '\e[7~' beginning-of-line
+bindkey '\e[8~' end-of-line
+bindkey '\e[H' beginning-of-line
+bindkey '\e[F' end-of-line
 # }}}
 
 # {{{ aliases
