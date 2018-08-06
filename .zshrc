@@ -186,6 +186,8 @@ compctl -g '*(-/)' + -g '.*(-/)' -v cd pushd
 # }}}
 
 # {{{ bindings
+bindkey -e
+bindkey '^R' history-incremental-pattern-search-backward 
 bindkey '\e[3~' delete-char
 bindkey '\e[5~' up-history
 bindkey '\e[6~' down-history
