@@ -1,11 +1,19 @@
 # ~/.zshrc
 # nico -> #/dev/null -> irc.rizon.net
 
+# Optional but very pleasant:
+# https://github.com/trapd00r/zsh-syntax-highlighting-filetypes 
+# https://github.com/trapd00r/LS_COLORS
+
+# Bugs:
+# In this config is a very rare completion bug (stalling prompt, can be killed with ^C after a short timeout)
+# most likely related to matcher-list but I have not bothered to investigate for years now as it is so rare 🤷
+
 #zsh_load_start_time=$(perl -MTime::HiRes -e 'print int(1000 * Time::HiRes::gettimeofday),"\n"')
 
 # {{{ modules and zle
-autoload -U compinit promptinit history-search-end url-quote-magic
-compinit -d ~/.zsh_compdump; promptinit
+autoload -U compinit history-search-end url-quote-magic
+compinit -d ~/.zsh_compdump
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 zle -N self-insert url-quote-magic
@@ -59,14 +67,10 @@ if [[ -f "$HOME/.zsh/zsh-syntax-highlighting-filetypes.zsh" ]]; then
 fi
 # }}}
 
-# {{{ ~/{bin,tmp}
+# {{{ ~/bin
 if [[ -n "${PATH/*$HOME\/bin:*}" ]]; then
    export PATH="${PATH}:${HOME}/bin"
 fi
-
-#if [[ -d "${HOME}/tmp" ]]; then
-#   export TMPDIR="${HOME}/tmp"
-#fi
 # }}}
 
 # {{{ history
@@ -154,16 +158,12 @@ zstyle ':completion:*' expand yes
 # lower to upper but not vice versa:
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' squeeze-shlashes yes
-
 # descriptions
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%Bno matches for: %d%b'
-
 # ignores
 zstyle ':completion:*:(diff|ls|rm|scp):*' ignore-line yes
-zstyle ':completion:*:cd:*' ignored-patterns '(*/)#lost+found' '(*/)#CVS'
-zstyle ':completion:*:(all-|)files' ignored-patterns '(*/)#lost+found' '(|*/)CVS'
 zstyle ':completion:*:complete:-command-::commands' ignored-patterns '*\~'
 zstyle ':completion:*:functions' ignored-patterns '_*'
 # kill menu
@@ -207,7 +207,7 @@ alias -g H='|head'
 alias -g L='|less'
 alias -g M='|more'
 alias -g N='&>/dev/null'
-alias -g P='|curl -F "sprunge=<-" http://sprunge.us'
+[[ -x $(which curl) ]] && alias -g P='|curl -F "sprunge=<-" http://sprunge.us'
 alias -g S='|sort'
 alias -g T='|tail'
 alias -g W='|wc -l'
