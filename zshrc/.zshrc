@@ -107,7 +107,7 @@ if [[ -x $(which vim) ]]; then
 fi
 [[ -x $(which less) ]] && export PAGER="less"
 export READNULLCMD="cat"
-limit coredumpsize 0
+limit coredumpsize 0 2>/dev/null
 typeset -U path cdpath fpath manpath
 stty -ixon -ixoff 2>/dev/null
 # }}}
