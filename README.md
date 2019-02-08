@@ -1,4 +1,4 @@
 configs
 =======
 
-Various configuration files
+Various configuration files & misc. outdated stuff.
