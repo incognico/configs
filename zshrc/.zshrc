@@ -146,6 +146,7 @@ TRANSIENT_RPROMPT
 # }}}
 
 # {{{ completion
+zstyle ':completion:*' rehash true
 zstyle ':completion:*' use-cache yes
 zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
