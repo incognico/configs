@@ -1,0 +1,51 @@
+statusbar = {
+  items = { act = "{sb $0-}"; lag = "{sb L:$0-}"; more = "{sb V}"; };
+  default = {
+    topic = { disabled = "yes"; };
+    window = { disabled = "yes"; };
+    prompt = {
+      items = {
+        uberprompt = { priority = "-1"; };
+        #        prompt = { priority = "-1"; };
+        #        prompt_empty = { priority = "-1"; };
+        input = { priority = "10"; };
+        more = { priority = "-1"; alignment = "right"; };
+        lag = { priority = "-1"; alignment = "right"; };
+        colours = { priority = "-1"; alignment = "right"; };
+        act = { priority = "10"; alignment = "right"; };
+      };
+    };
+  };
+};
+
+keyboard = (
+  { key = "^R"; id = "command"; data = "history_search"; },
+  { key = "^S"; id = "command"; data = "history_search -forward"; },
+  { key = "^Z"; id = "command"; data = "z"; },
+  { key = "meta-,"; id = "left_window"; },
+  #{ key = "meta--"; id = "command"; data = "scroll"; },
+  { key = "meta-."; id = "right_window"; },
+  { key = "meta-a"; id = "command"; data = "ack"; },
+  { key = "meta-m"; id = "command"; data = "scrollback end"; },
+  { 
+    key = "meta-meta2-5~";
+    id = "command";
+    data = "scrollback hlprev";
+  },
+  { 
+    key = "meta-meta2-6~";
+    id = "command";
+    data = "scrollback hlnext";
+  },
+  { key = "meta-s"; id = "active_window"; },
+  { key = "meta-x"; id = "command"; data = "window last"; },
+  { key = "meta-y"; id = "command"; data = "go"; },
+  { key = "meta-z"; id = "change_window"; data = "16"; }
+);
+
+windows = {
+  1 = { immortal = "yes"; name = "status"; level = "ALL"; };
+  2 = { immortal = "yes"; name = "hilight"; level = "NONE"; };
+  #2 = { immortal = "yes"; name = "hilight"; level = "HILIGHT"; };
+  3 = { immortal = "yes"; name = "jpqnm"; level = "NONE"; };
+};

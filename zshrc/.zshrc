@@ -102,12 +102,16 @@ export LESSCHARSET="utf-8"
 # {{{ misc settings
 cuname=$(uname)
 if [[ -x $(which vim) ]]; then
+   alias vi='vim'
+   alias vivi='vim ~/.vimrc'
+   alias vixd='vim ~/.Xdefaults'
+   alias vixi='vim ~/.xinitrc'
+   alias viz='vim ~/.zshrc'
    export VISUAL="vim"
    export EDITOR=$VISUAL
 fi
 [[ -x $(which less) ]] && export PAGER="less"
 export READNULLCMD="cat"
-limit coredumpsize 0 2>/dev/null
 typeset -U path cdpath fpath manpath
 stty -ixon -ixoff 2>/dev/null
 # }}}
@@ -245,11 +249,6 @@ alias df='df -h'
 alias du='du -hc'
 alias ih='fc -RI'
 alias j='jobs -l'
-[[ -x $(which vim) ]] && alias vi='vim'
-alias vivi='vim ~/.vimrc'
-alias vixd='vim ~/.Xdefaults'
-alias vixi='vim ~/.xinitrc'
-alias viz='vim ~/.zshrc'
 if [[ -x $(which wget) ]]; then
    alias wcat='wget -q -O -'
    alias wgetn='wget --no-check-certificate'
@@ -265,10 +264,8 @@ propstrings() { xprop | grep -E '^(WM_NAME)|(WM_WINDOW_ROLE)|(WM_CLASS)' }
 
 # {{{ host specific aliases and functions
 case $HOST in
-   997.lifeisabug.com)
+   contrite.lifeisabug.com)
       alias msess='tmux attach-session -d -t main || tmux new-session -s main irssi'
-      alias geoiplookup='geoiplookup -d /usr/local/share/GeoIP_k'
-      alias geoiplookup6='geoiplookup6 -d /usr/local/share/GeoIP_k'
       ;;
 esac
 # }}}
