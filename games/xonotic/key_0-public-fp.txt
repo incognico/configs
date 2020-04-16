@@ -1,0 +1,11 @@
+ID-Fingerprint: Ey6bieTKGbetAFqcAwqtlm2fYxqyYVihbTz0c0p6PdM=
+ID-Is-Signed: yes
+ID-Is-For-Key: Xon//KssdlzGkFKdnnN4sgg8H+koTbBn5JTi37BAW1Q=
+
+This is a PUBLIC ID file for DarkPlaces.
+You are free to share this file or its contents.
+
+This file will be automatically generated again if deleted.
+
+However, NEVER share the accompanying SECRET ID file called
+key_0.d0si, as doing so would compromise security!
