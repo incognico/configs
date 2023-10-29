@@ -12,7 +12,7 @@ set incsearch
 "set list
 set listchars=tab:▸\ ,eol:¬,trail:·
 set modelines=0
-"set mouse=a
+set mouse=n
 set noai
 set nocompatible
 set nomodeline
@@ -38,11 +38,12 @@ syntax on
 
 au BufRead,BufNewFile *.tt set filetype=html
 
+" https://github.com/ciaranm/inkpot/blob/master/colors/inkpot.vim
 try
     let g:inkpot_black_background=1
     colorscheme inkpot
 catch /^Vim\%((\a\+)\)\=:E185/
-    colorscheme ron
+    colorscheme desert
 endtry
 
 nnoremap / /\v
